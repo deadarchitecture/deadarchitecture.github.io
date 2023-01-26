@@ -10,4 +10,4 @@ In-Class Assignments
 -ICA2
 
 Weekly Assignments
--WA1
+-WA1 https://deadarchitecture.github.io/
