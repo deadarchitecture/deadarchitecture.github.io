@@ -15,4 +15,4 @@ Weekly Assignments
 
 -WA2 https://deadarchitecture.github.io/wa/wa2
 
--WA3 https://deadarchitecture.github.io/wa/wa3 
+-WA3 https://deadarchitecture.github.io/wa/wa3
