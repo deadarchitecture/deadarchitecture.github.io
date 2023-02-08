@@ -1,4 +1,4 @@
-# mikewjennings.github.io
+# deadarchitecture.github.io
 
 Projects
 -HTML
@@ -11,8 +11,8 @@ In-Class Assignments
 -ICA2 https://docs.google.com/document/d/1BPT56Ee_xxNbX48SNhbEWFEA1qYkXiuOxKlx8yN49eM/edit?usp=sharing
 
 Weekly Assignments
--WA1 https://mikewjennings.github.io/
+-WA1 https://deadarchitecture.github.io/
 
--WA2 https://mikewjennings.github.io/wa/wa2
+-WA2 https://deadarchitecture.github.io/wa/wa2
 
--WA3 https://mikewjennings.github.io/wa/wa3
+-WA3 https://deadarchitecture.github.io/wa/wa3 http://127.0.0.1:5500/wa/wa3.html
