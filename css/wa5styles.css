@@ -1,38 +1,11 @@
-body, html {
-    height: 100%;
-    padding: 0;
-    margin: 0;
-    font-size: 72px;
-
+body {
+    font-family: Helvetica;
+    background-color: color #f9f7f2;
 }
 
-/* Centered Image Code */
-
-.container {
-    height: 500px;
-    position: relative;
-    border: 3px solid #dbe4ed; /* Border color is optional */ 
-  }
-  
-   .center {
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -ms-transform: translate(-50%, -50%);
+.img {
+    position: center;
+    top: 0;
+    left: 0;
     transform: translate(-50%, -50%);
-  }
-
-#overlay1 {
-    color: red;
-    position: fixed;
-    top: 50px;
-    left: 50px;
-}
-
-#overlay2 {
-    color: blue;
-    position: fixed;
-    top: 50px;
-    right: 50px;
 }
