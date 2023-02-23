@@ -10,3 +10,10 @@
 #tallScreen{
     background-color: lavender;
 }
+
+@mediaonly screen and (max-width: 600px) {
+    #narrowScreen{
+        background-color: purple;
+    }
+
+}
