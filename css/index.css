@@ -1,0 +1,68 @@
+body {
+    background-color: #425ba6;
+    font-family: 'Courier New', Courier, monospace; color: #f9f7f2;
+    padding-left: 50px;
+}
+
+div {
+    max-width: 500px;
+}
+
+img {
+position: absolute;
+border-radius: 50%;
+right: 60px;
+bottom: 200px;
+}
+
+.btn {
+background-color: orange;
+border: none;
+color: #f9f7f2;
+padding: 12px 30px;
+border-radius: 30px;
+cursor: pointer;
+font-size: 20px;
+position: relative;
+top: 100px;
+}
+
+.btn:hover {
+    background-color: orangered;
+  }
+
+  html:before,html:after,body:before,body:after{
+    content:"";
+    background:#f9f7f2;
+    position:fixed;
+    display:block;
+    z-index:5;
+}
+
+html:before{
+    height:10px;
+    left:0;
+    right:0;
+    top:0;
+}
+
+html:after{
+    width:10px;
+    top:0;
+    right:0;
+    bottom:0;
+}
+
+body:before{
+    height:10px;
+    right:0;
+    bottom:0;
+    left:0;
+}
+
+body:after{
+    width:10px;
+    top:0;
+    bottom:0;
+    left:0;
+}
