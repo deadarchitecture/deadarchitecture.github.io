@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #button {
+            border: 20px solid orangered;
+            border-radius: 50px;
+            background-color: off whitesmoke;
+            padding: 10px 40px;
+            width: 200px;
+        }
+
+        p {
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div id="button">
+        <p>click me!</p>
+    </div>
+
+    <div>
+        <label for="guessField">enter guess: </label>
+        <input type="number" min="1" max="100" required id="guessField" class="guessField">
+        <input type="submit">
+    </div>
+
+    <script>
+        console.log("hello, world");
+        let button = document.querySelector("#button");
+        console.log(button0);
+        // console.log(button)
+
+        function changeButton() {
+            // console.log("this worked!");
+            button.textContent = "test";
+            button.style.backgroundColor = "darkmagenta";
+            button.style.border = "2px solid red";
+            button.style.color = "white";
+        }
+
+        button.addEventListener('click', changeButton);
+
+        function checkGuess() {
+            // alert('I am a placeholder');
+            // alert(userGuess.value);
+
+            let value = userGuess.value * 2;
+            alert(value);
+        }
+
+        let guessButton = document.querySelector(".guessSubmit");
+        let userGuess = document.querySelector(".guessField");
+        //console.log(guessButton);
+        guessButton.addEventListener('click', checkGuess);
+    </script>
+</body>
+</html>
