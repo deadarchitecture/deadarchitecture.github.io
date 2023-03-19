@@ -1,0 +1,26 @@
+body {
+    background-color: #425ba6;
+    font-family: 'Courier New', Courier, monospace; color: #f9f7f2;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+  label {
+    font-weight: bold;  
+  }
+
+  div {
+    padding-bottom: 20px;
+  }
+
+  input[type="text"] {
+    padding: 5px;
+    width: 50px;
+  }
+
+  p {
+    background: #f9f7f2;
+    color: #151515;
+    padding: 10px;
+    visibility: hidden;
+  }
