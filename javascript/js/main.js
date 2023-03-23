@@ -7,7 +7,7 @@ function randomValueFromArray(array){
   return array[random];
 }
 
-const storyText = 'It was 68 fahrenheit outside, so :insertx: got in a space ship. When they got to :inserty:, they stared in horror for a few moments, then :insertz:. Bob saw the whole thing, but was not surprised — :insertx: weighs 300 tonnes, and it was a cold day.';
+const storyText = 'It was 68 fahrenheit outside, so :insertx: got in a space ship. When they got to :inserty:, they stared in horror for a few moments, then :insertz:. Bob saw the whole thing, but was not surprised — :insertx: weighs 60 tonnes, and it was a cold day.';
 const insertX = ['Jerry Garcia', 'Bob', 'Buckminster Fuller'];
 const insertY = ['the ENVD building', 'Ibiza', 'Bed Stuy'];
 const insertZ = ['imploded', 'turned into Flubber, from the 1997 film starring Robin Williams', 'became four dimensional beings'];
