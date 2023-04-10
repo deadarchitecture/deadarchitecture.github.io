@@ -1,0 +1,45 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link href="/css/a11.css" rel="stylesheet">
+  <title>Radio</title>
+</head>
+<body>
+  <h1>Radio</h1>
+<div class="p">
+    <p>This is an extension to view my most played songs from Spotify in the last 30 days.</p>
+</div>
+  <div id="top-tracks"></div>
+  <script>
+    // Authorization token that must have been created previously. See : https://developer.spotify.com/documentation/web-api/concepts/authorization
+    const token = 'BQBOTNTLcXwPh0pGzuUOMwNQtPjAE7XGeSYXMzv4oqB5F8d2vxT4lajuYZKAj4KRWT28BqDq5aNllvNFhiY-6T7akCt3Fy9BXPE5X5WQSgaR8IYqgB__Hr0_AlVZp_kt2sztilqvxijVipZSPh5gTpAngtUBbmqitlLrfURq6xI_K_hrHoS1bdCjyrFASTinQt4pdMLWOAJZG9qZ_uBaNzL5lohHs4E2nOuZjAeo6WANAsaE-ZYhzUCGW3w4BBVBITbks3kYzi97Rh_H4NKeH8DcHWcbN3VlPcFaI5CO7yLYPA_0lTSw0pT54uPaTX4fXJftOpUU6WHtsHNoIpWwhMsWiEA';
+
+    async function fetchWebApi(endpoint, method, body) {
+      const res = await fetch(`https://api.spotify.com/${endpoint}`, {
+        headers: {
+          Authorization: `Bearer ${token}`,
+        },
+        method,
+        body: JSON.stringify(body),
+      });
+      return await res.json();
+    }
+
+    async function getTopTracks() {
+      // Endpoint reference : https://developer.spotify.com/documentation/web-api/reference/get-users-top-artists-and-tracks
+      return (await fetchWebApi(
+        'v1/me/top/tracks?time_range=short_term&limit=5', 'GET'
+      )).items;
+    }
+
+    async function displayTopTracks() {
+      const topTracks = await getTopTracks();
+      const listItems = topTracks.map(({ name, artists }) => `<li>${name} by ${artists.map(artist => artist.name).join(', ')}</li>`);
+      const html = `<ol>${listItems.join('')}</ol>`;
+      document.getElementById("top-tracks").innerHTML = html;
+    }
+
+    displayTopTracks();
+  </script>
+</body>
+</html> 
